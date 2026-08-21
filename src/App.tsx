@@ -2,7 +2,7 @@ import { CircularProgress, Container, Link, Stack, Typography } from "@mui/mater
 import { useAuth } from "./auth/AuthContext";
 import Convert from "./pages/Convert";
 
-const WEB_LOGIN_URL = "http://localhost:3000/login";
+const WEB_LOGIN_URL = `${import.meta.env.VITE_WEB_LOGIN_URL}/login`;
 
 export default function App() {
   const { user, loading } = useAuth();
